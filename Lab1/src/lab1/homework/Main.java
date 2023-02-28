@@ -20,6 +20,12 @@ public class Main {
             return;
         }
 
+        if(n < 0)
+        {
+            System.out.println("The argument can not be negative");
+            return;
+        }
+
         int[][] latinSquare = BuildSquare(n);
 
         long startTime = System.currentTimeMillis();
@@ -34,6 +40,7 @@ public class Main {
         }
     }
 
+    // Builds basic latin square with the provided dimension
     private static int[][] BuildSquare(int n)
     {
         int[][] latinSquare = new int[n][n];
@@ -49,6 +56,7 @@ public class Main {
         return latinSquare;
     }
 
+    // Displays lines and columns of the square
     private static void DisplayLinesAndColumns(int[][] square)
     {
         /// Build lines
