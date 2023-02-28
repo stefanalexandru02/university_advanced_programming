@@ -4,6 +4,7 @@ import java.util.Objects;
 
 /**
  * @author Virna Stefan Alexandru
+ * Define a road object
  */
 public class Road {
     private RoadType Type;

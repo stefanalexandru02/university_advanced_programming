@@ -4,6 +4,7 @@ import java.util.Objects;
 
 /**
  * @author Virna Stefan Alexandru
+ * Defina a location object
  */
 public class Location {
     private String Name;
