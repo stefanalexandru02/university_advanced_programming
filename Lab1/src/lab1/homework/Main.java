@@ -65,7 +65,7 @@ public class Main {
             StringBuilder lineStr = new StringBuilder();
             for(int j = 0; j < square[i].length; j++)
             {
-                lineStr.append(square[i][j]);
+                lineStr.append(square[i][j] + " ");
             }
             if(square.length < noDisplayThreshold)
             {
@@ -79,7 +79,7 @@ public class Main {
             StringBuilder lineStr = new StringBuilder();
             for(int j = 0; j < square[i].length; j++)
             {
-                lineStr.append(square[j][i]);
+                lineStr.append(square[j][i] + " ");
             }
             if(square.length < noDisplayThreshold)
             {
