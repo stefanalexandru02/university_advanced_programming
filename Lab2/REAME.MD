@@ -11,7 +11,7 @@ We consider the problem of determining the "best" route from one location to ano
 
 The main specifications of the application are:
 
-Compulsory (1p)
+# Compulsory (1p)
 
 Create an object-oriented model of the problem. You should have (at least) the following classes: Location, Road. 
 The location and road types will be implemented as enums.
@@ -21,7 +21,7 @@ The toString method form the Object class must be properly overridden for all th
 Use the IDE features for code generation, for example (in NetBeans) press Alt+Ins or invoke the context menu, select "Insert Code" and then "toString()" (or simply start typing "toString" and then press Ctrl+Space).
 Create and print on the screen various objects of the two classes.
 
-Homework (2p) 
+# Homework (2p) 
 
 Create a class that describes an instance of the problem.
 Override the Object.equals method for the Location and Road classes. The problem should not allow adding the same location or road twice.
@@ -29,3 +29,13 @@ Instead of using an enum, create dedicated classes either for locations: cities,
 Implement a method that determines if a problem's instance is valid.
 Implement an algorithm for determining if it is possible to go from one location to another using the given roads.
 Write doc comments in your source code and generate the class documentation using javadoc.
+
+# Description
+
+We created the required classes (Road) and (Locations), with their various implementations:
+Airport, City, GasStation, and CountryRoad, ExpressRoad, Highway.
+
+All these, are added inside the instance problem class (Best Route Problem), in two Lists. One for each class type (Road and Locations).
+As part of this class we have methods to validate the instance "CheckIfInstanceIsValid" and to also check if a location is accessible from another one, "CheckIfLocationIsAccessible".
+
+
