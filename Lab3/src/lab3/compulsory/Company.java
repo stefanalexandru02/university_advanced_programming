@@ -5,7 +5,7 @@ import java.util.Comparator;
 /**
  * @author Virna Stefan Alexandru
  */
-public class Company implements Comparator, Node {
+public class Company implements Node, Comparable<Company> {
     private String Name;
 
     public Company(String companyName)
@@ -14,12 +14,12 @@ public class Company implements Comparator, Node {
     }
 
     @Override
-    public int compare(Object o1, Object o2) {
-        return 0;
+    public String GetName() {
+        return Name;
     }
 
     @Override
-    public String GetName() {
-        return Name;
+    public int compareTo(Company o) {
+        return this.Name.compareTo(o.Name);
     }
 }
