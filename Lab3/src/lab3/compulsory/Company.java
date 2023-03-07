@@ -4,6 +4,7 @@ import java.util.Comparator;
 
 /**
  * @author Virna Stefan Alexandru
+ * Class that defines a Company. Implements Node and Comparable
  */
 public class Company implements Node, Comparable<Company> {
     private String Name;

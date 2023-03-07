@@ -4,6 +4,7 @@ import java.util.Comparator;
 
 /**
  * @author Virna Stefan Alexandru
+ * Class that defines a Person. Implements Node and Comparable
  */
 public class Person implements Node, Comparable<Person> {
     private String Name;
