@@ -29,3 +29,11 @@ Create a network object containing persons, companies and relationships and prin
 Implement an efficient agorithm to determine if there are nodes in this networks which, if they are removed, disconnect the network.
 Identify the blocks of the network, that is subgraphs that are maximally 2-connected.
 Create JUnit tests for your algorithms.
+
+# Homework solution
+
+For the homework, we have the main Node interface, which is implemented by two classes, Company and Person. The Person class defines a generic person.
+There are two "personalizations" of a person, in the form of a Programmer or a Designer.
+
+The network class contains a list of all Nodes. Person and Person derived classes also have a list of connected nodes and the connection types.
+The company only has an integer value to track this.
