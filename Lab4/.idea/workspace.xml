@@ -4,27 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f8328625-e35b-4967-98a2-d0f746b6ff19" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../Lab3/src/lab3/homework/Company.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab3/src/lab3/homework/Designer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab3/src/lab3/homework/Network.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab3/src/lab3/homework/Node.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab3/src/lab3/homework/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab3/src/lab3/homework/Programmer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/compulsory/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/compulsory/Project.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/compulsory/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/homework/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab3/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab3/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab3/out/production/Lab3/lab3/homework/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab3/out/production/Lab3/lab3/homework/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab3/src/lab3/homework/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab3/src/lab3/homework/Main.java" afterDir="false" />
+    <list default="true" id="f8328625-e35b-4967-98a2-d0f746b6ff19" name="Changes" comment="t4w">
+      <change afterPath="$PROJECT_DIR$/src/main/java/homework/Project.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/homework/ProjectAssignmentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/homework/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/homework/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/homework/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/homework/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/homework/Main.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,22 +47,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/stefanalexandru/Desktop/university_advanced_programming/Lab4/src/main/java/homework",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
-  <component name="RunManager" selected="Application.Compulsory">
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/homework" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Homework">
     <configuration name="Compulsory" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="compulsory.Main" />
       <module name="Lab4" />
@@ -105,11 +99,32 @@
       <workItem from="1678628188129" duration="86000" />
       <workItem from="1678628277501" duration="1772000" />
       <workItem from="1678630629638" duration="265000" />
-      <workItem from="1678633814466" duration="2595000" />
+      <workItem from="1678633814466" duration="2672000" />
+      <workItem from="1679321848538" duration="4163000" />
     </task>
+    <task id="LOCAL-00001" summary="t4w">
+      <created>1678812791299</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1678812791299</updated>
+    </task>
+    <task id="LOCAL-00002" summary="t4w">
+      <created>1678812799596</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1678812799596</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="t4" />
+    <MESSAGE value="t4w" />
+    <option name="LAST_COMMIT_MESSAGE" value="t4w" />
   </component>
 </project>
