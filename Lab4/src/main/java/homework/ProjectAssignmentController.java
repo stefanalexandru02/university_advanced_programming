@@ -28,6 +28,9 @@ public class ProjectAssignmentController {
 
     public Project getProject(int index) { return Projects.get(index); }
 
+    /**
+     * Display students with filter
+     */
     public void displayStudentsWithLowerThanAveragePreferencesCount()
     {
         Integer averageNumberOfPreferences = Students.stream()
@@ -42,6 +45,9 @@ public class ProjectAssignmentController {
         System.out.println();
     }
 
+    /**
+     * Assigns projects to students in a greddy manner
+     */
     public void assignProjectsToStudents()
     {
         Collections.sort(Students);
