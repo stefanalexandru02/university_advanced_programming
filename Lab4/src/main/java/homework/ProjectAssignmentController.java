@@ -46,7 +46,7 @@ public class ProjectAssignmentController {
     }
 
     /**
-     * Assigns projects to students in a greddy manner
+     * Assigns projects to students in a greedy manner
      */
     public void assignProjectsToStudents()
     {
@@ -62,7 +62,7 @@ public class ProjectAssignmentController {
                 });
             }
             else {
-                System.out.println(student.getName() + " -> {}");
+                System.out.println(student.getName() + " -> {not assigned}");
             }
         });
     }

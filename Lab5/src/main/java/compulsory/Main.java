@@ -14,6 +14,7 @@ public class Main {
         catalog.add(new Document("1", "Test doc 1", "/doc.pdf", DocumentType.Document, new Hashtable<>(){{ put("autor", "Stefan");}}));
         catalog.add(new Document("2", "Test doc 2", "/doc.pdf", DocumentType.Article, null));
         catalog.add(new Document("3", "Test doc 3", "/doc.pdf", DocumentType.Magazine, null));
+        catalog.add(new Document("3", "Test doc 4", "/doc.pdf", DocumentType.Magazine, null));
 
         //System.out.println(catalog);
         System.out.println(utils.toString(catalog));

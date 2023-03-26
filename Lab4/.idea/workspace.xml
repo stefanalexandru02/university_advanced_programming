@@ -7,6 +7,8 @@
     <list default="true" id="f8328625-e35b-4967-98a2-d0f746b6ff19" name="Changes" comment="t4w">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/homework/ProjectAssignmentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/homework/ProjectAssignmentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/homework/ProjectAssignmentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/homework/ProjectAssignmentController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab5/catalog.json" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +97,8 @@
       <workItem from="1678630629638" duration="265000" />
       <workItem from="1678633814466" duration="2672000" />
       <workItem from="1679321848538" duration="4352000" />
-      <workItem from="1679413485016" duration="39000" />
+      <workItem from="1679413485016" duration="1187000" />
+      <workItem from="1679415904151" duration="563000" />
     </task>
     <task id="LOCAL-00001" summary="t4w">
       <created>1678812791299</created>
