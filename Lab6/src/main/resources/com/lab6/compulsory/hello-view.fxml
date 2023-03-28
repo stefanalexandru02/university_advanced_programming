@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" maxHeight="520.0" maxWidth="710.0" minHeight="520.0" minWidth="710.0" prefHeight="520.0" prefWidth="710.0" spacing="20.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.lab6.compulsory.HelloController">
+   <children>
+      <StackPane alignment="TOP_CENTER" maxHeight="40.0" minHeight="40.0" prefWidth="716.0" style="-fx-background-color: lightgray;">
+         <children>
+            <Pane>
+               <children>
+                  <Label layoutX="9.0" layoutY="11.0" text="Number of dots" />
+                  <Spinner fx:id="numberOfDotsSpinner" editable="true" layoutX="100.0" layoutY="7.0" />
+                  <Button layoutX="268.0" layoutY="7.0" mnemonicParsing="false" onAction="#CreateNewGame" prefHeight="26.0" prefWidth="178.0" text="Create new game" />
+               </children>
+            </Pane>
+         </children>
+      </StackPane>
+      <StackPane fx:id="canvasParent" style="-fx-background-color: white;" VBox.vgrow="ALWAYS">
+          <Canvas fx:id="drawingCanvas" height="100" width="100" StackPane.alignment="CENTER" VBox.vgrow="ALWAYS" />
+      </StackPane>
+      <StackPane alignment="BOTTOM_CENTER" maxHeight="40.0" minHeight="40.0" style="-fx-background-color: lightgray;">
+         <children>
+            <Pane>
+               <children>
+                  <Button layoutX="6.0" layoutY="5.0" mnemonicParsing="false" onAction="#LoadGame" prefHeight="26.0" prefWidth="84.0" text="Load" />
+                  <Button layoutX="92.0" layoutY="5.0" mnemonicParsing="false" onAction="#SaveGame" prefHeight="26.0" prefWidth="84.0" text="Save" />
+                  <Button layoutX="178.0" layoutY="5.0" mnemonicParsing="false" onAction="#ResetGame" prefHeight="26.0" prefWidth="84.0" text="Reset" />
+                  <Button layoutX="264.0" layoutY="5.0" mnemonicParsing="false" onAction="#ExitGame" prefHeight="26.0" prefWidth="84.0" text="Exit" />
+               </children>
+            </Pane>
+         </children>
+      </StackPane>
+   </children>
+</VBox>
