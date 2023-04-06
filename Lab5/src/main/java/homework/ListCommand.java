@@ -4,6 +4,7 @@ import compulsory.Catalog;
 
 /**
  * @author Virna Stefan Alexandru
+ * Command for listig out catalog
  */
 public class ListCommand implements Command {
     @Override

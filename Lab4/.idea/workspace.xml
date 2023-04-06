@@ -5,10 +5,36 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f8328625-e35b-4967-98a2-d0f746b6ff19" name="Changes" comment="t4w">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/homework/ProjectAssignmentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/homework/ProjectAssignmentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/homework/ProjectAssignmentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/homework/ProjectAssignmentController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab5/catalog.json" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab5/target/classes/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab5/target/classes/compulsory/Catalog.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab5/target/classes/compulsory/CatalogUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab5/target/classes/compulsory/Document.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab5/target/classes/compulsory/DocumentType.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab5/target/classes/compulsory/Main$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab5/target/classes/compulsory/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab5/target/classes/homework/Command.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab5/target/classes/homework/ListCommand.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab5/target/classes/homework/LoadCommand.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab5/target/classes/homework/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab5/target/classes/homework/ReportCommand.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab5/target/classes/homework/ViewCommand.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab5/target/classes/homework/exceptions/FileAccessException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab5/target/classes/homework/exceptions/GenericCustomException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab6/src/main/java/com/lab6/compulsory/Game.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab6/src/main/java/com/lab6/compulsory/helpers/Line.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab5/src/main/java/homework/Command.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab5/src/main/java/homework/Command.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab5/src/main/java/homework/ListCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab5/src/main/java/homework/ListCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab5/src/main/java/homework/LoadCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab5/src/main/java/homework/LoadCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab5/src/main/java/homework/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab5/src/main/java/homework/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab5/src/main/java/homework/ReportCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab5/src/main/java/homework/ReportCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab5/src/main/java/homework/ViewCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab5/src/main/java/homework/ViewCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab5/src/main/java/homework/exceptions/FileAccessException.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab5/src/main/java/homework/exceptions/FileAccessException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab5/src/main/java/homework/exceptions/GenericCustomException.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab5/src/main/java/homework/exceptions/GenericCustomException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab6/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab6/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab6/src/main/java/com/lab6/compulsory/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab6/src/main/java/com/lab6/compulsory/HelloController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab6/src/main/java/com/lab6/compulsory/helpers/Point.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab6/src/main/java/com/lab6/compulsory/helpers/Point.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab6/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab6/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab6/src/main/resources/com/lab6/compulsory/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab6/src/main/resources/com/lab6/compulsory/hello-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,6 +125,7 @@
       <workItem from="1679321848538" duration="4352000" />
       <workItem from="1679413485016" duration="1187000" />
       <workItem from="1679415904151" duration="563000" />
+      <workItem from="1680709098088" duration="10000" />
     </task>
     <task id="LOCAL-00001" summary="t4w">
       <created>1678812791299</created>

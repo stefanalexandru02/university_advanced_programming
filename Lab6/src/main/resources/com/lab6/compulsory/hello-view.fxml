@@ -26,6 +26,7 @@
                <children>
                   <Button layoutX="6.0" layoutY="5.0" mnemonicParsing="false" onAction="#LoadGame" prefHeight="26.0" prefWidth="84.0" text="Load" />
                   <Button layoutX="92.0" layoutY="5.0" mnemonicParsing="false" onAction="#SaveGame" prefHeight="26.0" prefWidth="84.0" text="Save" />
+                  <Button layoutX="619.0" layoutY="5.0" mnemonicParsing="false" onAction="#SavePNG" prefHeight="26.0" prefWidth="84.0" text="SavePNG" />
                   <Button layoutX="178.0" layoutY="5.0" mnemonicParsing="false" onAction="#ResetGame" prefHeight="26.0" prefWidth="84.0" text="Reset" />
                   <Button layoutX="264.0" layoutY="5.0" mnemonicParsing="false" onAction="#ExitGame" prefHeight="26.0" prefWidth="84.0" text="Exit" />
                </children>

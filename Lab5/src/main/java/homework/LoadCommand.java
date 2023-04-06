@@ -8,6 +8,7 @@ import java.io.IOException;
 
 /**
  * @author Virna Stefan Alexandru
+ * Command for loading catalog
  */
 public class LoadCommand implements Command {
     @Override

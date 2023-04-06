@@ -9,6 +9,7 @@ import java.io.IOException;
 
 /**
  * @author Virna Stefan Alexandru
+ * Command for viewing the catalog.json file
  */
 public class ViewCommand implements Command {
     @Override

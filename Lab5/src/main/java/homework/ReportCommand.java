@@ -12,6 +12,7 @@ import java.io.*;
 
 /**
  * @author Virna Stefan Alexandru
+ * Command for showing the report
  */
 public class ReportCommand implements Command{
     @Override

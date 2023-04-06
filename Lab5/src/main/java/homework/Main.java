@@ -18,7 +18,7 @@ public class Main {
         new LoadCommand().executeOperation(catalog);
         new ListCommand().executeOperation(catalog);
 
-        //new ViewCommand().executeOperation(catalog);
+        new ViewCommand().executeOperation(catalog);
 
         new ReportCommand().executeOperation(catalog);
     }
