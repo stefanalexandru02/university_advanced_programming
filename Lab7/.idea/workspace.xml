@@ -4,21 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="08fa83a8-973d-4e4e-9bce-3a65d19f6219" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lab7/compulsory/Cell.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lab7/compulsory/Map.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lab7/compulsory/Robot.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lab7/compulsory/SharedMemPool.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lab7/compulsory/Token.java" afterDir="false" />
-    </list>
+    <list default="true" id="08fa83a8-973d-4e4e-9bce-3a65d19f6219" name="Changes" comment="compulsory" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -83,11 +69,23 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1680763102489</updated>
-      <workItem from="1680763103518" duration="6212000" />
+      <workItem from="1680763103518" duration="6329000" />
     </task>
+    <task id="LOCAL-00001" summary="compulsory">
+      <created>1680777842451</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1680777842451</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="compulsory" />
+    <option name="LAST_COMMIT_MESSAGE" value="compulsory" />
   </component>
 </project>
