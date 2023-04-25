@@ -8,6 +8,11 @@ import java.sql.*;
  * @author Virna Stefan Alexandru
  */
 public class ArtistDAO {
+    /**
+     * Creates a new Artist
+     * @param name
+     * @throws SQLException
+     */
     public void create(String name) throws SQLException {
         Connection conn = Database.getConnection();
         try (PreparedStatement pstmt = conn.prepareStatement(
@@ -19,6 +24,12 @@ public class ArtistDAO {
         conn.commit();
     }
 
+    /**
+     * Find object by Id
+     * @param id
+     * @return
+     * @throws SQLException
+     */
     public Artist findById(Integer id) throws SQLException {
         Connection conn = Database.getConnection();
         try (Statement stmt = conn.createStatement())
@@ -29,6 +40,12 @@ public class ArtistDAO {
         }
     }
 
+    /**
+     * Find object by name
+     * @param name
+     * @return
+     * @throws SQLException
+     */
     public Artist findByName(String name) throws SQLException {
         Connection conn = Database.getConnection();
         try (Statement stmt = conn.createStatement())
@@ -39,6 +56,11 @@ public class ArtistDAO {
         }
     }
 
+    /**
+     * Updates an object instance
+     * @param artist
+     * @throws SQLException
+     */
     public void updateInstance(Artist artist) throws SQLException {
         Connection conn = Database.getConnection();
         try (PreparedStatement pstmt = conn.prepareStatement(
@@ -49,6 +71,11 @@ public class ArtistDAO {
         conn.commit();
     }
 
+    /**
+     * Deletes an object instance
+     * @param id
+     * @throws SQLException
+     */
     public void deleteById(Integer id) throws SQLException {
         Connection conn = Database.getConnection();
         try (Statement stmt = conn.createStatement())

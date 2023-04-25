@@ -14,12 +14,19 @@ public class Database {
     private static final String PASSWORD = "15022002";
     private static Connection connection = null;
 
+    /**
+     * @return Gets a connection to be used in the app
+     */
     public static Connection getConnection() {
         if(connection == null) {
             createConnection();
         }
         return connection;
     }
+
+    /**
+     * Creates a new connection
+     */
     private static void createConnection() {
         try {
             connection = DriverManager.getConnection(URL, USER, PASSWORD);
@@ -28,6 +35,10 @@ public class Database {
             System.err.println(e);
         }
     }
+
+    /**
+     * Closes connection
+     */
     public static void closeConnection() {
         try {
             if(!connection.isClosed()) {
@@ -38,6 +49,9 @@ public class Database {
         }
     }
 
+    /**
+     * Creates a new database
+     */
     public static void initializeDb(){
         Connection conn = getConnection();
         Statement stmt = null;
