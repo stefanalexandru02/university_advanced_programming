@@ -275,6 +275,10 @@ public class HelloController {
         canvasParent.getChildren().addAll(drawingCanvas, overlay);
     }
 
+    /**
+     * Check if one of the players won
+     * @return boolean
+     */
     private boolean checkAnyoneWon()
     {
         for(int i = 0; i < gameInstance.getLines().size(); i++)
