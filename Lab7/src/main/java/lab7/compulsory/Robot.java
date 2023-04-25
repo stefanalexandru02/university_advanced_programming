@@ -1,5 +1,6 @@
 package lab7.compulsory;
 
+import lab7.homework.Direction;
 import org.javatuples.Pair;
 
 import java.util.*;
@@ -24,13 +25,27 @@ public class Robot implements Runnable {
                 '}';
     }
 
-    public Robot(String name, int xPos, int yPos) {
+    public String getNumberOfTokens() {
+        return "Robot{" +
+                ", tokens=" + tokens.size() +
+                '}';
+    }
+
+    public Robot(String name, int xPos, int yPos, boolean printLogs, boolean useRandom) {
         this.name = name;
         this.xPos = xPos;
         this.yPos = yPos;
 
+        this.printLogs = printLogs;
+        this.useRandom = useRandom;
+
         isRunning = true;
     }
+
+    private Boolean printLogs = false;
+    private Boolean useRandom;
+
+    public Boolean getPrintLogs() { return printLogs; }
 
     public String getName() { return name; }
     public int getxPos() { return xPos; }
@@ -53,16 +68,24 @@ public class Robot implements Runnable {
     public void run() {
         while(isRunning)
         {
-            if(Map.exploreRandom(this) == false)
-            {
-                System.out.println(name + " finished exploration");
-                isRunning = false;
+            if(useRandom) {
+                if(Map.exploreRandom(this) == false)
+                {
+                    System.out.println(name + " finished exploration");
+                    isRunning = false;
+                }
             }
+            else {
+                if(Map.exploreLogic(this) == false)
+                {
+                    System.out.println(name + " finished exploration");
+                    isRunning = false;
+                }
+            }
+
             try {
-                Thread.sleep(500);
-            } catch (InterruptedException e) {
-                throw new RuntimeException(e);
-            }
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {}
         }
     }
 
@@ -72,5 +95,26 @@ public class Robot implements Runnable {
 
     public void setTokens(List<Token> tokens) {
         this.tokens = tokens;
+    }
+
+    public void pause() {
+        isRunning = false;
+    }
+
+    public void start() {
+        isRunning = true;
+        run();
+    }
+
+    public boolean getIsRunning() { return isRunning; }
+
+    private Direction robotDirection = Direction.None;
+
+    public Direction getRobotDirection() {
+        return robotDirection;
+    }
+
+    public void setRobotDirection(Direction robotDirection) {
+        this.robotDirection = robotDirection;
     }
 }

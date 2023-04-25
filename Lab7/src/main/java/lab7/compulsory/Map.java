@@ -1,5 +1,6 @@
 package lab7.compulsory;
 
+import lab7.homework.Direction;
 import org.javatuples.Pair;
 
 import java.util.ArrayList;
@@ -31,7 +32,10 @@ public class Map {
                 int col = pair.getValue1();
                 if(!matrix[row][col].isVisited())
                 {
-                    System.out.println(robot.getName() + " visited {" + pair.getValue0() + ", "+pair.getValue1()+" }");
+                    if(robot.getPrintLogs())
+                    {
+                        System.out.println(robot.getName() + " visited {" + pair.getValue0() + ", "+pair.getValue1()+" }");
+                    }
                     matrix[row][col].visit();
                     matrix[row][col].getTokens().addAll(SharedMemPool.extractTokens(matrix.length));
                     robot.getTokens().addAll(matrix[row][col].getTokens());
@@ -86,5 +90,85 @@ public class Map {
                 return new Pair<>(row - 1, col + 1);
         }
         return null;
+    }
+
+    public static boolean exploreLogic(Robot robot) {
+        if(robot.getRobotDirection() == Direction.None) {
+            if(robot.getxPos() > matrix.length / 2)
+            {
+                robot.setRobotDirection(Direction.Left);
+            }
+            else
+            {
+                robot.setRobotDirection(Direction.Right);
+            }
+        }
+        else {
+            Pair<Integer, Integer> nextPosition = new Pair<>(robot.getxPos(), robot.getyPos());
+            int row = robot.getxPos();
+            int col = robot.getyPos();
+            switch (robot.getRobotDirection())
+            {
+                case Top:
+                    nextPosition = new Pair<>(row, col - 1);
+                    break;
+                case Down:
+                    nextPosition = new Pair<>(row, col + 1);
+                    break;
+                case Left:
+                    nextPosition = new Pair<>(row - 1, col);
+                    break;
+                case Right:
+                    nextPosition = new Pair<>(row + 1, col);
+                    break;
+            }
+            row = nextPosition.getValue0();
+            col = nextPosition.getValue1();
+            if(!matrix[row][col].isVisited())
+            {
+                matrix[row][col].visit();
+                matrix[row][col].getTokens().addAll(SharedMemPool.extractTokens(matrix.length));
+                robot.getTokens().addAll(matrix[row][col].getTokens());
+                return true;
+            }
+            else {
+                if(robot.getyPos() > matrix.length / 2)
+                {
+                    robot.setRobotDirection(Direction.Top);
+                }
+                else
+                {
+                    robot.setRobotDirection(Direction.Down);
+                }
+                switch (robot.getRobotDirection())
+                {
+                    case Top:
+                        nextPosition = new Pair<>(row, col - 1);
+                        break;
+                    case Down:
+                        nextPosition = new Pair<>(row, col + 1);
+                        break;
+                    case Left:
+                        nextPosition = new Pair<>(row - 1, col);
+                        break;
+                    case Right:
+                        nextPosition = new Pair<>(row + 1, col);
+                        break;
+                }
+                row = nextPosition.getValue0();
+                col = nextPosition.getValue1();
+                if(!matrix[row][col].isVisited())
+                {
+                    matrix[row][col].visit();
+                    matrix[row][col].getTokens().addAll(SharedMemPool.extractTokens(matrix.length));
+                    robot.getTokens().addAll(matrix[row][col].getTokens());
+                    return true;
+                }
+                else {
+                    return false;
+                }
+            }
+        }
+        return false;
     }
 }

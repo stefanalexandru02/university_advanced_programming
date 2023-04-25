@@ -4,7 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="08fa83a8-973d-4e4e-9bce-3a65d19f6219" name="Changes" comment="compulsory" />
+    <list default="true" id="08fa83a8-973d-4e4e-9bce-3a65d19f6219" name="Changes" comment="compulsory">
+      <change afterPath="$PROJECT_DIR$/src/main/java/lab7/homework/Direction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lab7/homework/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lab7/homework/RobotExecutionThread.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lab7/homework/Timekeeper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lab7/compulsory/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lab7/compulsory/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lab7/compulsory/Map.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lab7/compulsory/Map.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lab7/compulsory/Robot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lab7/compulsory/Robot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lab7/compulsory/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lab7/compulsory/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lab7/compulsory/Map.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lab7/compulsory/Map.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lab7/compulsory/Robot.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lab7/compulsory/Robot.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,6 +26,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -38,28 +51,39 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
-  <component name="RunManager">
-    <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
+}</component>
+  <component name="RunManager" selected="Application.Homework">
+    <configuration name="Compulsory" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="lab7.compulsory.Main" />
       <module name="Lab7" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Homework" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="lab7.homework.Main" />
+      <module name="Lab7" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Compulsory" />
+      <item itemvalue="Application.Homework" />
+    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -70,6 +94,8 @@
       <option name="presentableId" value="Default" />
       <updated>1680763102489</updated>
       <workItem from="1680763103518" duration="6329000" />
+      <workItem from="1680780591046" duration="72000" />
+      <workItem from="1682162202515" duration="10003000" />
     </task>
     <task id="LOCAL-00001" summary="compulsory">
       <created>1680777842451</created>
@@ -78,11 +104,29 @@
       <option name="project" value="LOCAL" />
       <updated>1680777842451</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="compulsory">
+      <created>1680780600159</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1680780600159</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="compulsory" />
