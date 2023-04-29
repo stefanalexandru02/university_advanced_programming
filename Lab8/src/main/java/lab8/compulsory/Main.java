@@ -45,7 +45,7 @@ public class Main {
             if(genre == null)
                 genre = genreDAO.create(genreName);
 
-            Album album = albumDAO.findByName(albumName);
+            Album album = albumDAO.findByNameAndArtist(albumName, artist);
             if(album == null)
                 album = albumDAO.create(albumName, year, artist, Arrays.asList(genre));
         }

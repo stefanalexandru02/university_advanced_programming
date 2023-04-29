@@ -51,7 +51,7 @@ public class AlbumDAO {
             conn.commit();
         }
         System.out.println("Create album " + name);
-        return findByName(name);
+        return findByNameAndArtist(name, artist);
     }
 
     /**
@@ -88,11 +88,12 @@ public class AlbumDAO {
      * @return
      * @throws SQLException
      */
-    public Album findByName(String name) throws SQLException {
+    public Album findByNameAndArtist(String name, Artist artist) throws SQLException {
         Connection conn = Database.getConnection();
-        try (PreparedStatement stmt = conn.prepareStatement("select id from albums where title = ?"))
+        try (PreparedStatement stmt = conn.prepareStatement("select id from albums where title = ? and artist_id = ?"))
         {
             stmt.setString(1, name);
+            stmt.setInt(2, artist.Id);
             ResultSet rs = stmt.executeQuery();
             rs.next();
             return findById(rs.getInt("id"));
