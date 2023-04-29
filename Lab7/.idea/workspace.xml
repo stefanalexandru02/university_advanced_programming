@@ -5,17 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="08fa83a8-973d-4e4e-9bce-3a65d19f6219" name="Changes" comment="compulsory">
-      <change afterPath="$PROJECT_DIR$/src/main/java/lab7/homework/Direction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lab7/homework/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lab7/homework/RobotExecutionThread.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lab7/homework/Timekeeper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lab7/compulsory/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lab7/compulsory/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lab7/compulsory/Map.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lab7/compulsory/Map.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lab7/compulsory/Robot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lab7/compulsory/Robot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lab7/compulsory/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lab7/compulsory/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lab7/compulsory/Map.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lab7/compulsory/Map.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lab7/compulsory/Robot.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lab7/compulsory/Robot.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab8/src/main/java/lab8/compulsory/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab8/src/main/java/lab8/compulsory/Database.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab8/src/main/java/lab8/compulsory/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab8/src/main/java/lab8/compulsory/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab8/target/classes/lab8/compulsory/DAO/ArtistDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab8/target/classes/lab8/compulsory/DAO/ArtistDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab8/target/classes/lab8/compulsory/Database.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab8/target/classes/lab8/compulsory/Database.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab8/target/classes/lab8/compulsory/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab8/target/classes/lab8/compulsory/Main.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,6 +91,7 @@
       <workItem from="1680763103518" duration="6329000" />
       <workItem from="1680780591046" duration="72000" />
       <workItem from="1682162202515" duration="10003000" />
+      <workItem from="1682434367229" duration="658000" />
     </task>
     <task id="LOCAL-00001" summary="compulsory">
       <created>1680777842451</created>

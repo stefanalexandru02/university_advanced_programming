@@ -4,9 +4,9 @@ create table if not exists "Albums".public."albums"
 (
     id serial
         constraint albums_pk
-            primary key
-        constraint artist
-            references artists,
+            primary key,
+    artist_id integer constraint artist
+        references artists,
     release_year int,
     title varchar(500)
 );

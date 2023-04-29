@@ -2,6 +2,8 @@ package lab8.compulsory.DAO;
 
 import lab8.compulsory.Database;
 import lab8.compulsory.Models.Artist;
+import lab8.compulsory.Models.Genre;
+
 import java.sql.*;
 
 /**
@@ -13,7 +15,7 @@ public class ArtistDAO {
      * @param name
      * @throws SQLException
      */
-    public void create(String name) throws SQLException {
+    public Artist create(String name) throws SQLException {
         Connection conn = Database.getConnection();
         try (PreparedStatement pstmt = conn.prepareStatement(
                 "insert into artists (name) values (?)"
@@ -22,6 +24,8 @@ public class ArtistDAO {
             pstmt.executeUpdate();
         }
         conn.commit();
+        System.out.println("Created artist " + name);
+        return findByName(name);
     }
 
     /**
@@ -48,12 +52,13 @@ public class ArtistDAO {
      */
     public Artist findByName(String name) throws SQLException {
         Connection conn = Database.getConnection();
-        try (Statement stmt = conn.createStatement())
+        try (PreparedStatement stmt = conn.prepareStatement("select id, name from artists where name = ?"))
         {
-            ResultSet rs = stmt.executeQuery("select id, name from artists where name = '"+name+"'");
+            stmt.setString(1, name);
+            ResultSet rs = stmt.executeQuery();
             rs.next();
             return new Artist(rs.getInt("id"), rs.getString("name"));
-        }
+        } catch (SQLException ex) { return null; }
     }
 
     /**

@@ -1,5 +1,8 @@
 package lab8.compulsory;
 
+import com.zaxxer.hikari.HikariConfig;
+import com.zaxxer.hikari.HikariDataSource;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
@@ -9,17 +12,21 @@ import java.sql.Statement;
  * @author Virna Stefan Alexandru
  */
 public class Database {
-    private static final String URL = "jdbc:postgresql://192.168.0.195:32590/Albums";
+    private static final String URL = "jdbc:postgresql://localhost:5455/Albums";
     private static final String USER = "postgres";
-    private static final String PASSWORD = "15022002";
+    private static final String PASSWORD = "password";
     private static Connection connection = null;
+    private static HikariDataSource dataSource = null;
 
     /**
      * @return Gets a connection to be used in the app
      */
-    public static Connection getConnection() {
+    public static Connection getConnection() throws SQLException {
         if(connection == null) {
-            createConnection();
+            if(dataSource == null) {
+                initializeDataSource();
+            }
+            connection = dataSource.getConnection();
         }
         return connection;
     }
@@ -52,7 +59,7 @@ public class Database {
     /**
      * Creates a new database
      */
-    public static void initializeDb(){
+    public static void initializeDb() throws SQLException {
         Connection conn = getConnection();
         Statement stmt = null;
         try {
@@ -83,5 +90,30 @@ public class Database {
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
+    }
+
+
+    public static HikariDataSource getDataSource()
+    {
+        if (dataSource == null) {
+            initializeDataSource();
+        }
+        return dataSource;
+    }
+
+    public static void initializeDataSource()
+    {
+        HikariConfig config = new HikariConfig();
+
+        config.setDataSourceClassName("org.postgresql.ds.PGSimpleDataSource");
+        config.addDataSourceProperty("serverName", "localhost");
+        config.addDataSourceProperty("portNumber", "5455");
+        config.addDataSourceProperty("databaseName", "Albums");
+        config.addDataSourceProperty("user", USER);
+        config.addDataSourceProperty("password", PASSWORD);
+        config.setAutoCommit(false);
+
+        // postgress configuration for Hikari
+        dataSource = new HikariDataSource(config);
     }
 }

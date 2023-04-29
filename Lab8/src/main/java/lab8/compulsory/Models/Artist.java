@@ -11,4 +11,12 @@ public class Artist {
 
     public Integer Id;
     public String Name;
+
+    @Override
+    public String toString() {
+        return "Artist{" +
+                "Id=" + Id +
+                ", Name='" + Name + '\'' +
+                '}';
+    }
 }
