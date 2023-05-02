@@ -11,7 +11,7 @@ public class Main {
         // g.setName("RANDOM STRANGE");
 
         EntityRepository<Genres> genresEntityRepository = new EntityRepository<>();
-        // genresEntityRepository.persist(g);
+        // genresEntityRepository.create(g);
 
         Genres g = genresEntityRepository.findById(34);
         System.out.println(g.getName());

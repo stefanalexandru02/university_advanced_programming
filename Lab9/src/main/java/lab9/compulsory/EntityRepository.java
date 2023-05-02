@@ -6,7 +6,7 @@ import java.io.Serializable;
  * @author Virna Stefan Alexandru
  */
 public class EntityRepository <T> {
-    public void persist(T entity) {
+    public void create(T entity) {
         DatabaseEntity.getEntityManager().getTransaction().begin();
         DatabaseEntity.getEntityManager().persist(entity);
         DatabaseEntity.getEntityManager().getTransaction().commit();
