@@ -4,17 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fd0204b3-43c5-492f-9408-d44e5e2ee239" name="Changes" comment="compulsory rename method">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4e8ac61a-9110-4a85-83fa-9dc61a8d129b.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/4e8ac61a-9110-4a85-83fa-9dc61a8d129b.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lab9/compulsory/EntityRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lab9/compulsory/EntityRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lab9/compulsory/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lab9/compulsory/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lab9/compulsory/models/Albums.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lab9/compulsory/models/Albums.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lab9/compulsory/models/AlbumsGenreAssoc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lab9/compulsory/models/AlbumsGenreAssoc.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lab9/compulsory/models/Artists.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lab9/compulsory/models/Artists.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lab9/compulsory/models/Genres.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lab9/compulsory/models/Genres.java" afterDir="false" />
-    </list>
+    <list default="true" id="fd0204b3-43c5-492f-9408-d44e5e2ee239" name="Changes" comment="lab9 homework" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -91,7 +81,7 @@
       <updated>1682784896816</updated>
       <workItem from="1682784897869" duration="1829000" />
       <workItem from="1683035850673" duration="1424000" />
-      <workItem from="1683483881671" duration="2472000" />
+      <workItem from="1683483881671" duration="2721000" />
     </task>
     <task id="LOCAL-00001" summary="compulsory">
       <created>1682786722631</created>
@@ -114,7 +104,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683037314242</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="lab9 homework">
+      <created>1683486377668</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1683486377668</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -123,6 +120,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="compulsory" />
     <MESSAGE value="compulsory rename method" />
-    <option name="LAST_COMMIT_MESSAGE" value="compulsory rename method" />
+    <MESSAGE value="lab9 homework" />
+    <option name="LAST_COMMIT_MESSAGE" value="lab9 homework" />
   </component>
 </project>

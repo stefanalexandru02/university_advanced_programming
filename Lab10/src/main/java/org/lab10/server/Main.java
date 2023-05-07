@@ -1,4 +1,4 @@
-package org.lab10.client;
+package org.lab10.server;
 
 /**
  * @author Virna Stefan Alexandru
@@ -6,6 +6,7 @@ package org.lab10.client;
 public class Main {
     public static void main(String[] args) {
 
-        new GameClient().run();
+        var gameServer = new GameServer();
+        gameServer.run();
     }
 }
