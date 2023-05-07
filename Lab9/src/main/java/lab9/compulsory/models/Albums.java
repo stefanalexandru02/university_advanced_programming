@@ -2,25 +2,30 @@ package lab9.compulsory.models;
 
 import jakarta.persistence.*;
 
+import java.util.ArrayList;
+import java.util.Collection;
+
 /**
  * @author Virna Stefan Alexandru
  */
 @Entity
-@Table(name = "albums")
 public class Albums {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
-    @Column(name = "id")
+    @Column(name = "id", nullable = false)
     private int id;
     @Basic
-    @Column(name = "artist_id")
+    @Column(name = "artist_id", nullable = true)
     private Integer artistId;
     @Basic
-    @Column(name = "release_year")
+    @Column(name = "release_year", nullable = true)
     private Integer releaseYear;
     @Basic
-    @Column(name = "title")
+    @Column(name = "title", nullable = true, length = 500)
     private String title;
+
+    @Transient
+    private Collection<AlbumsGenreAssoc> albumsGenreAssocsById = new ArrayList<>();
 
     public int getId() {
         return id;
@@ -76,5 +81,13 @@ public class Albums {
         result = 31 * result + (releaseYear != null ? releaseYear.hashCode() : 0);
         result = 31 * result + (title != null ? title.hashCode() : 0);
         return result;
+    }
+
+    public Collection<AlbumsGenreAssoc> getAlbumsGenreAssocsById() {
+        return albumsGenreAssocsById;
+    }
+
+    public void setAlbumsGenreAssocsById(Collection<AlbumsGenreAssoc> albumsGenreAssocsById) {
+        this.albumsGenreAssocsById = albumsGenreAssocsById;
     }
 }

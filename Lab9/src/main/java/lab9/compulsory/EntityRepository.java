@@ -1,5 +1,8 @@
 package lab9.compulsory;
 
+import lab9.compulsory.models.Albums;
+import lab9.compulsory.models.AlbumsGenreAssoc;
+
 import java.io.Serializable;
 
 /**
@@ -10,6 +13,14 @@ public class EntityRepository <T> {
         DatabaseEntity.getEntityManager().getTransaction().begin();
         DatabaseEntity.getEntityManager().persist(entity);
         DatabaseEntity.getEntityManager().getTransaction().commit();
+
+        if(entity instanceof Albums)
+        {
+            EntityRepository<AlbumsGenreAssoc> assocEntityRepository = new EntityRepository<>();
+            ((Albums) entity).getAlbumsGenreAssocsById().forEach(assoc -> {
+                assocEntityRepository.create(assoc);
+            });
+        }
     }
 
     public T findById(long id) {

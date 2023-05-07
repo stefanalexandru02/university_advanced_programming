@@ -8,17 +8,13 @@ import java.util.Collection;
  * @author Virna Stefan Alexandru
  */
 @Entity
-@Table(name = "artists")
-@NamedQueries({
-        @NamedQuery(name="Artists.findAll", query = "select e from Artists e order by e.name"),
-})
 public class Artists {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
-    @Column(name = "id")
+    @Column(name = "id", nullable = false)
     private int id;
     @Basic
-    @Column(name = "name")
+    @Column(name = "name", nullable = true, length = 500)
     private String name;
 
     public int getId() {

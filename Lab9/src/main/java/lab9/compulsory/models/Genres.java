@@ -2,8 +2,6 @@ package lab9.compulsory.models;
 
 import jakarta.persistence.*;
 
-import java.util.Collection;
-
 /**
  * @author Virna Stefan Alexandru
  */
@@ -17,10 +15,10 @@ import java.util.Collection;
 public class Genres {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
-    @Column(name = "id")
+    @Column(name = "id", nullable = false)
     private int id;
     @Basic
-    @Column(name = "name")
+    @Column(name = "name", nullable = true, length = 500)
     private String name;
 
     public int getId() {

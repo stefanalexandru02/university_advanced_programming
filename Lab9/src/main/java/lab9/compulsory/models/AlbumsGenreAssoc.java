@@ -2,22 +2,20 @@ package lab9.compulsory.models;
 
 import jakarta.persistence.*;
 
-import java.io.Serializable;
-
 /**
  * @author Virna Stefan Alexandru
  */
 @Entity
 @Table(name = "albums_genre_assoc", schema = "public", catalog = "Albums")
 @IdClass(AlbumsGenreAssoc.class)
-public class AlbumsGenreAssoc implements Serializable {
+public class AlbumsGenreAssoc {
     @Id
     @Basic
-    @Column(name = "album_id")
+    @Column(name = "album_id", nullable = true, insertable = false, updatable = false)
     private Integer albumId;
     @Id
     @Basic
-    @Column(name = "genre_id")
+    @Column(name = "genre_id", nullable = true, insertable = false, updatable = false)
     private Integer genreId;
 
     public Integer getAlbumId() {
@@ -25,6 +23,8 @@ public class AlbumsGenreAssoc implements Serializable {
     }
 
     public void setAlbumId(Integer albumId) {
+        if(albumId == 0)
+            albumId = bkp_id++;
         this.albumId = albumId;
     }
 
@@ -55,4 +55,6 @@ public class AlbumsGenreAssoc implements Serializable {
         result = 31 * result + (genreId != null ? genreId.hashCode() : 0);
         return result;
     }
+
+    static int bkp_id = 1001;
 }
